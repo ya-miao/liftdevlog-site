@@ -1,6 +1,9 @@
-// import React from 'react';
+import React from 'react';
 // import logo from './logo.svg';
 // import './App.css';
+
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 
 import { Box, Typography } from "@mui/material";
 
@@ -70,24 +73,27 @@ const App = () => {
     //     </a>
     //   </header>
     // </div>
-
-    <ThemeProvider theme={siteTheme}>
-      {/* <Box
-      height="100vh"
-      display="flex"
-      justifyContent="center"
-      flexDirection="column"
-    > */}
-      <Box
-        height="100%"
-        display="flex"
-        justifyContent="center"
-        flexDirection="column"
-      >
-        <SiteHeader />
-        <MainPage />
-      </Box>
-    </ThemeProvider>
+    <React.StrictMode>
+      <BrowserRouter>
+        <ThemeProvider theme={siteTheme}>
+          {/* <Box
+            height="100vh"
+            display="flex"
+            justifyContent="center"
+            flexDirection="column"
+          > */}
+          <Box
+            height="100%"
+            display="flex"
+            justifyContent="center"
+            flexDirection="column"
+          >
+            <SiteHeader />
+            <MainPage />
+          </Box>
+        </ThemeProvider>
+      </BrowserRouter>
+    </React.StrictMode>
   );
 }
 

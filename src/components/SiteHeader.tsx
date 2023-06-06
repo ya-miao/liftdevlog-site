@@ -18,6 +18,8 @@ import liftdevlogLogo from '../images/liftdevlog-logo-white-0.png';
 
 import ContactDialog from "./ContactDialog";
 
+import { useNavigate } from "react-router-dom";
+
 interface SiteHeaderProps {
   // user: any;
   // isDarkMode: boolean;
@@ -41,6 +43,8 @@ const SiteHeader = () => {
   //       console.log('error signing out: ', error);
   //     }
   //   };
+
+  const navigate = useNavigate();
 
   const [openContact, setOpenContact] = useState(false);
 
@@ -72,7 +76,6 @@ const SiteHeader = () => {
               <img width='50px' height='50px' src={liftdevlogLogo} />
               {/* <Typography variant='h3'>Lift Dev Log</Typography> */}
               <Typography variant='h3'>Lift Dev Log</Typography>
-
             </Stack>
           </Grid>
           <Grid item display={{ xs: 'block', sm: 'none' }}>
@@ -93,12 +96,12 @@ const SiteHeader = () => {
           {/* <Grid item display={{ xs: 'block', sm: 'none' }}> */}
           <Grid item>
             <Stack direction='row' spacing={2}>
-            {/* <IconButton color="secondary" onClick={handleClickOpenContact}>
+              {/* <IconButton color="secondary" onClick={handleClickOpenContact}>
               <EmailIcon />
             </IconButton> */}
-            <IconButton color="secondary" onClick={handleClickMenu}>
-              <MenuIcon />
-            </IconButton>
+              <IconButton color="secondary" onClick={handleClickMenu}>
+                <MenuIcon />
+              </IconButton>
             </Stack>
           </Grid>
           {/* <Grid item display={{ xs: 'none', sm: 'block' }}>
@@ -168,21 +171,41 @@ const SiteHeader = () => {
         transformOrigin={{ horizontal: 'right', vertical: 'top' }}
         anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
       >
-        <MenuItem onClick={handleCloseMenu}>
+        {/* <MenuItem onClick={handleCloseMenu}> */}
+        <MenuItem onClick={() => {
+          navigate('/about');
+          handleCloseMenu();
+        }}>
           About The Log
         </MenuItem>
         <Divider />
-        <MenuItem onClick={handleCloseMenu}>
+        {/* <MenuItem onClick={handleCloseMenu}> */}
+        <MenuItem onClick={() => {
+          navigate('/projects');
+          handleCloseMenu();
+        }}>
           The Projects
         </MenuItem>
-        <MenuItem onClick={handleCloseMenu}>
+        {/* <MenuItem onClick={handleCloseMenu}> */}
+        <MenuItem onClick={() => {
+          navigate('/updates');
+          handleCloseMenu();
+        }}>
           Project Updates
         </MenuItem>
         <Divider />
-        <MenuItem onClick={handleCloseMenu}>
+        {/* <MenuItem onClick={handleCloseMenu}> */}
+        <MenuItem onClick={() => {
+          navigate('/suggestions');
+          handleCloseMenu();
+        }}>
           Suggest Features
         </MenuItem>
-        <MenuItem onClick={handleCloseMenu}>
+        {/* <MenuItem onClick={handleCloseMenu}> */}
+        <MenuItem onClick={() => {
+          navigate('reports');
+          handleCloseMenu();
+        }}>
           Report Bugs
         </MenuItem>
       </Menu>
