@@ -14,10 +14,10 @@ import logolyLogo from '../images/liftdevlog-logo-white-1.png';
 
 const AboutPage = () => {
   return (
-    <Grid container spacing={4}>
+    <Grid container spacing={3}>
       <Grid item xs={12} md={6}>
         <Grid item xs={12}>
-          <Grid container spacing={4}>
+          <Grid container spacing={3}>
             <Grid item xs={12}>
               <Card>
                 <CardContent>
@@ -31,7 +31,7 @@ const AboutPage = () => {
             </Grid>
             <Grid item xs={12} lg={6}>
               <Card>
-                <CardContent>
+                <CardContent sx={{ m: 1 }}>
                   <Stack justifyContent='flex-start' spacing={1.5}>
                     <Typography variant='h5'>
                       What Is The Log?
@@ -51,7 +51,7 @@ const AboutPage = () => {
             <Grid item xs={12} lg={6}>
               <Card>
                 {/* <Card variant='outlined'> */}
-                <CardContent>
+                <CardContent sx={{ m: 1 }}>
                   <Stack justifyContent='flex-start' spacing={1.5}>
                     <Typography variant='h5'>
                       Who Is TriL Studio?
@@ -76,7 +76,7 @@ const AboutPage = () => {
       </Grid>
       <Grid item xs={12} md={6}>
         <Grid item xs={12}>
-          <Grid container spacing={4}>
+          <Grid container spacing={3}>
             <Grid item xs={12}>
               <Card>
                 <CardContent>
@@ -91,14 +91,14 @@ const AboutPage = () => {
             <Grid item xs={12}>
               {/* <Card>
                 <CardContent> */}
-                  <Stack direction='column' alignItems='center' justifyContent='center' spacing={2}>
-                    <IconButton>
-                      <Stack alignItems='center' justifyContent='center' spacing={2}>
-                        <img height={120} width={120} src={logolyLogo} />
-                      </Stack>
-                    </IconButton>
+              <Stack direction='column' alignItems='center' justifyContent='center' spacing={2}>
+                <IconButton>
+                  <Stack alignItems='center' justifyContent='center' spacing={2}>
+                    <img height={120} width={120} src={logolyLogo} />
                   </Stack>
-                {/* </CardContent>
+                </IconButton>
+              </Stack>
+              {/* </CardContent>
               </Card> */}
             </Grid>
           </Grid>
@@ -108,7 +108,7 @@ const AboutPage = () => {
         <Divider />
       </Grid>
       <Grid item xs={12}>
-        <Grid container spacing={4}>
+        <Grid container spacing={3}>
           <Grid item xs={12}>
             <Card>
               <CardContent>
@@ -123,7 +123,8 @@ const AboutPage = () => {
           <Grid item xs={12} md={6} lg={4}>
             <Accordion disableGutters>
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
+                expandIcon={<ExpandMoreIcon color="secondary" />}
+                sx={{ m: 1 }}
               >
                 <Stack direction='row' alignItems='center' justifyContent='center' spacing={2.5}>
                   <Avatar sx={{ width: 120, height: 120 }} src={profileLiz} />
@@ -140,7 +141,9 @@ const AboutPage = () => {
                   </Stack>
                 </Stack>
               </AccordionSummary>
-              <AccordionDetails>
+              <AccordionDetails
+                sx={{ m: 1 }}
+              >
                 <Stack direction='column' spacing={1}>
                   <Typography>
                     As founder and full stack developer, Liz built LogOly and Lift Dev Log from the ground up.
@@ -155,7 +158,8 @@ const AboutPage = () => {
           <Grid item xs={12} md={6} lg={4}>
             <Accordion disableGutters>
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
+                expandIcon={<ExpandMoreIcon color="secondary" />}
+                sx={{ m: 1 }}
               >
                 <Stack direction='row' alignItems='center' justifyContent='center' spacing={2.5}>
                   <Avatar sx={{ width: 120, height: 120 }} src={profileLiana} />
@@ -172,7 +176,9 @@ const AboutPage = () => {
                   </Stack>
                 </Stack>
               </AccordionSummary>
-              <AccordionDetails>
+              <AccordionDetails
+                sx={{ m: 1 }}
+              >
                 <Stack direction='column' spacing={1}>
                   <Typography>
                     Liana balances both a professional athlete career with her tech career in software accessibility.
@@ -187,7 +193,8 @@ const AboutPage = () => {
           <Grid item xs={12} md={6} lg={4}>
             <Accordion disableGutters>
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
+                expandIcon={<ExpandMoreIcon color="secondary" />}
+                sx={{ m: 1 }}
               >
                 <Stack direction='row' alignItems='center' justifyContent='center' spacing={2.5}>
                   <Avatar sx={{ width: 120, height: 120 }} src={profileLady} />
@@ -204,7 +211,9 @@ const AboutPage = () => {
                   </Stack>
                 </Stack>
               </AccordionSummary>
-              <AccordionDetails>
+              <AccordionDetails
+                sx={{ m: 1 }}
+              >
                 <Stack direction='column' spacing={1}>
                   <Typography>
                     Miao.

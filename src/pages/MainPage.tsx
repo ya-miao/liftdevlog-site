@@ -17,14 +17,14 @@ const MainPage = () => {
       display="flex"
       justifyContent="center"
       flexDirection="column"
-      sx={{ m: 4 }}
+      sx={{ m: 3 }}
     >
       {/* <Stack spacing={2}>
         <Typography variant='h4'>Under Construction</Typography>
       </Stack> */}
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="about" element={<AboutPage />} />
+        <Route path="/" element={<AboutPage />} />
+        {/* <Route path="about" element={<AboutPage />} /> */}
         <Route path="projects" element={<ProjectsPage />} />
         <Route path="updates" element={<UpdatesPage/>} />
         <Route path="suggestions" element={<SuggestionsPage />} />

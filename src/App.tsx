@@ -28,6 +28,8 @@ const App = () => {
         main: '#eeebfb',
         // main: '#fbebeb',     
       },
+      // divider: '#964d4d',
+      divider: '#a74d4e',
     },
     typography: {
       // fontFamily: 'Montserrat',
@@ -54,6 +56,54 @@ const App = () => {
         fontFamily: 'Jura',
       },
     },
+    components: {
+      // Name of the component
+      // MuiButton: {
+      //   styleOverrides: {
+      //     // Name of the slot
+      //     root: {
+      //       // Some CSS
+      //       fontSize: '1rem',
+      //     },
+      //   },
+      // },
+      MuiAccordion: {
+        styleOverrides: {
+          root: {
+            backgroundColor: '#1d1d1d',
+            // backgroundColor: '#964d4d',
+            color: '#ffffff',
+          },
+        },
+      },
+      MuiAppBar: {
+        styleOverrides: {
+          root: {
+            backgroundColor: '#101010',
+            // backgroundColor: '#964d4d',
+            color: '#ffffff',
+          },
+        },
+      },
+      MuiCard: {
+        styleOverrides: {
+          root: {
+            backgroundColor: '#1d1d1d',
+            // backgroundColor: '#964d4d',
+            color: '#ffffff',
+          },
+        },
+      },
+      MuiPaper: {
+        styleOverrides: {
+          root: {
+            // backgroundColor: '#1d1d1d',
+            backgroundColor: '#101010',
+            color: '#ffffff',
+          },
+        },
+      },
+    }
   });
 
   return (

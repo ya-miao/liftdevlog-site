@@ -14,7 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import Divider from '@mui/material/Divider';
 
-import liftdevlogLogo from '../images/liftdevlog-logo-white-0.png';
+import liftdevlogLogo from '../images/liftdevlog-logo-black-1.png';
 
 import ContactDialog from "./ContactDialog";
 
@@ -177,22 +177,19 @@ const SiteHeader = () => {
         }}>
           Home
         </MenuItem>
-        {/* <MenuItem onClick={handleCloseMenu}> */}
-        <MenuItem onClick={() => {
+        {/* <MenuItem onClick={() => {
           navigate('/about');
           handleCloseMenu();
         }}>
           About The Log
-        </MenuItem>
+        </MenuItem> */}
         <Divider />
-        {/* <MenuItem onClick={handleCloseMenu}> */}
         <MenuItem onClick={() => {
           navigate('/projects');
           handleCloseMenu();
         }}>
           Ongoing Projects
         </MenuItem>
-        {/* <MenuItem onClick={handleCloseMenu}> */}
         <MenuItem onClick={() => {
           navigate('/updates');
           handleCloseMenu();
@@ -200,14 +197,12 @@ const SiteHeader = () => {
           Project Updates
         </MenuItem>
         <Divider />
-        {/* <MenuItem onClick={handleCloseMenu}> */}
         <MenuItem onClick={() => {
           navigate('/suggestions');
           handleCloseMenu();
         }}>
           Suggest Features
         </MenuItem>
-        {/* <MenuItem onClick={handleCloseMenu}> */}
         <MenuItem onClick={() => {
           navigate('reports');
           handleCloseMenu();
