@@ -1,6 +1,6 @@
 import React from 'react';
 // import logo from './logo.svg';
-// import './App.css';
+import './App.css';
 
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
@@ -19,7 +19,7 @@ const App = () => {
       mode: 'light',
       // mode: 'dark',
       primary: {
-        // main: '#a74d4e',
+        // main: '#5e1a1a',
         main: '#9a3a3a',
         // main: '#641a1a',
       },

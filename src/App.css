@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.MuiCard-root {
+  background-color: #9a3a3a;
+  color: #ffffff;
+}
+
+.MuiAccordion-root {
+  background-color: #9a3a3a;
+  color: #ffffff;
+}
