@@ -32,11 +32,11 @@ const AboutPage = () => {
             <Grid item xs={12} lg={6}>
               <Card>
                 <CardContent sx={{ m: 1 }}>
-                  <Stack justifyContent='flex-start' spacing={1.5}>
+                  <Stack justifyContent='flex-start' spacing={2}>
                     <Typography variant='h5'>
                       What Is The Log?
                     </Typography>
-                    <Stack justifyContent='flex-start' spacing={1}>
+                    <Stack justifyContent='flex-start' spacing={1.5}>
                       <Typography>
                         The Log is the documentation site for all TriL Studio projects.
                       </Typography>
@@ -52,11 +52,11 @@ const AboutPage = () => {
               <Card>
                 {/* <Card variant='outlined'> */}
                 <CardContent sx={{ m: 1 }}>
-                  <Stack justifyContent='flex-start' spacing={1.5}>
+                  <Stack justifyContent='flex-start' spacing={2}>
                     <Typography variant='h5'>
                       Who Is TriL Studio?
                     </Typography>
-                    <Stack justifyContent='flex-start' spacing={1}>
+                    <Stack justifyContent='flex-start' spacing={1.5}>
                       <Typography>
                         We are an informal, early stage startup team.
                       </Typography>
@@ -144,7 +144,7 @@ const AboutPage = () => {
               <AccordionDetails
                 sx={{ m: 1 }}
               >
-                <Stack direction='column' spacing={1}>
+                <Stack direction='column' spacing={1.5}>
                   <Typography>
                     As founder and full stack developer, Liz built LogOly and Lift Dev Log from the ground up.
                   </Typography>
@@ -179,7 +179,7 @@ const AboutPage = () => {
               <AccordionDetails
                 sx={{ m: 1 }}
               >
-                <Stack direction='column' spacing={1}>
+                <Stack direction='column' spacing={1.5}>
                   <Typography>
                     Liana balances both a professional athlete career with her tech career in software accessibility.
                   </Typography>
@@ -214,7 +214,7 @@ const AboutPage = () => {
               <AccordionDetails
                 sx={{ m: 1 }}
               >
-                <Stack direction='column' spacing={1}>
+                <Stack direction='column' spacing={1.5}>
                   <Typography>
                     Miao.
                   </Typography>
