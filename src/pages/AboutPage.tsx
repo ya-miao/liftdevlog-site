@@ -23,7 +23,7 @@ const AboutPage = () => {
                 <CardContent>
                   <Stack direction='column' alignItems='center' justifyContent='center' spacing={2}>
                     <Typography variant='h4'>
-                      Overview
+                      OVERVIEW
                     </Typography>
                   </Stack>
                 </CardContent>
@@ -38,7 +38,7 @@ const AboutPage = () => {
                     </Typography>
                     <Stack justifyContent='flex-start' spacing={1.5}>
                       <Typography>
-                        The Log is the documentation site for all TriL Studio projects.
+                        Documentation.
                       </Typography>
                       <Typography>
                         Read updates, suggest features, or report bugs here.
@@ -50,7 +50,6 @@ const AboutPage = () => {
             </Grid>
             <Grid item xs={12} lg={6}>
               <Card>
-                {/* <Card variant='outlined'> */}
                 <CardContent sx={{ m: 1 }}>
                   <Stack justifyContent='flex-start' spacing={2}>
                     <Typography variant='h5'>
@@ -58,7 +57,7 @@ const AboutPage = () => {
                     </Typography>
                     <Stack justifyContent='flex-start' spacing={1.5}>
                       <Typography>
-                        We are an informal, early stage startup team.
+                        A team of three.
                       </Typography>
                       <Typography>
                         One programmer. One tester. One cat.
@@ -82,7 +81,7 @@ const AboutPage = () => {
                 <CardContent>
                   <Stack direction='column' alignItems='center' justifyContent='center' spacing={2}>
                     <Typography variant='h4'>
-                      Projects
+                      PROJECTS
                     </Typography>
                   </Stack>
                 </CardContent>
@@ -114,7 +113,7 @@ const AboutPage = () => {
               <CardContent>
                 <Stack direction='column' alignItems='center' justifyContent='center' spacing={2}>
                   <Typography variant='h4'>
-                    The Team
+                    THE TEAM
                   </Typography>
                 </Stack>
               </CardContent>
@@ -132,9 +131,9 @@ const AboutPage = () => {
                     <Typography variant='h5' fontWeight={600}>
                       LIZ
                     </Typography>
-                    <Typography variant='h6' fontWeight={600}>
+                    {/* <Typography variant='h6' fontWeight={600}>
                       Founder,
-                    </Typography>
+                    </Typography> */}
                     <Typography variant='h6' fontWeight={600}>
                       Software Engineer
                     </Typography>
@@ -146,10 +145,10 @@ const AboutPage = () => {
               >
                 <Stack direction='column' spacing={1.5}>
                   <Typography>
-                    As founder and full stack developer, Liz built LogOly and Lift Dev Log from the ground up.
+                    As the resident full stack developer, Liz built LogOly and Lift Dev Log from the ground up.
                   </Typography>
                   <Typography>
-                    What started as a late night impulse became a simple app to track her lifts. This passion project has now turned into an informal startup.
+                    One late night thought led to a simple lift tracker app, which led to the formation of an informal startup team.
                   </Typography>
                 </Stack>
               </AccordionDetails>
@@ -167,9 +166,9 @@ const AboutPage = () => {
                     <Typography variant='h5' fontWeight={600}>
                       LIANA
                     </Typography>
-                    <Typography variant='h6' fontWeight={600}>
+                    {/* <Typography variant='h6' fontWeight={600}>
                       Co-Founder,
-                    </Typography>
+                    </Typography> */}
                     <Typography variant='h6' fontWeight={600}>
                       Quality Assurance
                     </Typography>
@@ -184,7 +183,7 @@ const AboutPage = () => {
                     Liana balances a professional athlete career with her tech career in software accessibility.
                   </Typography>
                   <Typography>
-                    As co-founder who also holds the sole quality assurance position, she has the greatest sway on any decisions made by the founder.
+                    As the sole holder of the quality assurance role, she has the greatest sway on any decisions Liz makes.
                   </Typography>
                 </Stack>
               </AccordionDetails>
@@ -202,9 +201,9 @@ const AboutPage = () => {
                     <Typography variant='h5' fontWeight={600}>
                       LADY
                     </Typography>
-                    <Typography variant='h6' fontWeight={600}>
+                    {/* <Typography variant='h6' fontWeight={600}>
                       Executive,
-                    </Typography>
+                    </Typography> */}
                     <Typography variant='h6' fontWeight={600}>
                       Human Resources
                     </Typography>
@@ -215,12 +214,14 @@ const AboutPage = () => {
                 sx={{ m: 1 }}
               >
                 <Stack direction='column' spacing={1.5}>
-                  <Typography>
+                  {/* <Typography>
                     Miao.
+                  </Typography> */}
+                  <Typography>
+                    Lady is Liz's beloved cat. She is a lady of few human-intelligible words.
                   </Typography>
                   <Typography>
-                    Lady is the beloved cat of the founder. She is a lady of few human-intelligible words.
-                    However, her contributions to the spirit and mental well-being of the team cannot be understated.
+                    However, her contributions to the work environment and mental well-being of the team cannot be understated.
                   </Typography>
                 </Stack>
               </AccordionDetails>

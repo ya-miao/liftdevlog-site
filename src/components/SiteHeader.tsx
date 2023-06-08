@@ -188,7 +188,7 @@ const SiteHeader = () => {
           navigate('/projects');
           handleCloseMenu();
         }}>
-          Ongoing Projects
+          All Projects
         </MenuItem>
         <MenuItem onClick={() => {
           navigate('/updates');
