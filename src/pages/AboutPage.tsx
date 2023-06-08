@@ -82,7 +82,7 @@ const AboutPage = () => {
                 <CardContent>
                   <Stack direction='column' alignItems='center' justifyContent='center' spacing={2}>
                     <Typography variant='h4'>
-                      Our Projects
+                      Projects
                     </Typography>
                   </Stack>
                 </CardContent>
@@ -181,7 +181,7 @@ const AboutPage = () => {
               >
                 <Stack direction='column' spacing={1.5}>
                   <Typography>
-                    Liana balances both a professional athlete career with her tech career in software accessibility.
+                    Liana balances a professional athlete career with her tech career in software accessibility.
                   </Typography>
                   <Typography>
                     As co-founder who also holds the sole quality assurance position, she has the greatest sway on any decisions made by the founder.
@@ -226,87 +226,6 @@ const AboutPage = () => {
               </AccordionDetails>
             </Accordion>
           </Grid>
-          {/* <Grid item sm={12} md={6} lg={4}>
-          <Stack direction='column' alignItems='center' justifyContent='center' spacing={2}>
-            <Stack direction='row' alignItems='center' justifyContent='center' spacing={2.5}>
-              <Avatar sx={{ width: 120, height: 120 }} src={profileLiz} />
-              <Stack direction='column' spacing={0.5}>
-                <Typography variant='h5' fontWeight={600}>
-                  LIZ
-                </Typography>
-                <Typography variant='h6' fontWeight={600}>
-                  Founder,
-                </Typography>
-                <Typography variant='h6' fontWeight={600}>
-                  Software Engineer
-                </Typography>
-              </Stack>
-            </Stack>
-            <Stack direction='column' spacing={1}>
-              <Typography>
-                As founder and full stack developer, Liz built LogOly and Lift Dev Log from the ground up.
-              </Typography>
-              <Typography>
-                What started as a late night impulse became a simple app to track her lifts. This passion project has now turned into an informal startup. 
-              </Typography>
-            </Stack>
-          </Stack>
-        </Grid>
-        <Grid item sm={12} md={6} lg={4}>
-          <Stack direction='column' alignItems='center' justifyContent='center' spacing={2}>
-            <Stack direction='row' alignItems='center' justifyContent='center' spacing={2.5}>
-              <Avatar sx={{ width: 120, height: 120 }} src={profileLiana} />
-              <Stack direction='column' spacing={0.5}>
-                <Typography variant='h5' fontWeight={600}>
-                  LIANA
-                </Typography>
-                <Typography variant='h6' fontWeight={600}>
-                  Co-Founder,
-                </Typography>
-                <Typography variant='h6' fontWeight={600}>
-                  Quality Assurance
-                </Typography>
-              </Stack>
-            </Stack>
-            <Stack direction='column' spacing={1}>
-              <Typography>
-                Liana balances both a professional athlete career with her tech career in software accessibility.
-              </Typography>
-              <Typography>
-                As co-founder who also holds the sole quality assurance position, she has the greatest sway on any decisions made by the founder.
-              </Typography>
-            </Stack>
-          </Stack>
-        </Grid>
-        <Grid item sm={12} md={6} lg={4}>
-          <Stack direction='column' alignItems='center' justifyContent='center' spacing={2}>
-            <Stack direction='column' spacing={1}>
-              <Stack direction='row' alignItems='center' justifyContent='center' spacing={2.5}>
-                <Avatar sx={{ width: 120, height: 120 }} src={profileLady} />
-                <Stack direction='column' spacing={0.5}>
-                  <Typography variant='h5' fontWeight={600}>
-                    LADY
-                  </Typography>
-                  <Typography variant='h6' fontWeight={600}>
-                    Executive,
-                  </Typography>
-                  <Typography variant='h6' fontWeight={600}>
-                    Human Resources
-                  </Typography>
-                </Stack>
-              </Stack>
-              <Stack direction='column' spacing={1}>
-              </Stack>
-              <Typography>
-                Miao.
-              </Typography>
-              <Typography>
-                Lady is the beloved cat of the founder. She is a lady of few human-intelligible words.
-                However, her contributions to the spirit and mental well-being of the team cannot be understated.
-              </Typography>
-            </Stack>
-          </Stack>
-        </Grid> */}
         </Grid>
       </Grid>
     </Grid>
