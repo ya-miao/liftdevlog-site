@@ -1,8 +1,14 @@
-import { Avatar, Accordion, AccordionDetails, AccordionSummary, Box, Button, Card, CardContent, Divider, Grid, IconButton, Stack, Typography } from "@mui/material";
+import React, { useState } from "react";
+
+import { Avatar, Accordion, AccordionDetails, AccordionSummary, Box, Button, Card, CardContent, Divider, Grid, IconButton, Snackbar, Stack, Typography } from "@mui/material";
+
+import { useCopyToClipboard } from 'usehooks-ts'
+import { useNavigate } from "react-router-dom";
 
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
+import CloseIcon from '@mui/icons-material/Close';
 
 import profileLiz from '../images/profile-liz.jpg';
 import profileLiana from '../images/profile-liana.jpg';
@@ -11,6 +17,35 @@ import profileLady from '../images/profile-lady0.jpg';
 import logolyLogo from '../images/liftdevlog-logo-white-1.png';
 
 const AboutPage = () => {
+  const [value, copy] = useCopyToClipboard()
+  const navigate = useNavigate();
+
+  const [openCopy, setOpenCopy] = React.useState(false);
+
+  const handleClickCopy = () => {
+    setOpenCopy(true);
+  };
+
+  const handleCloseCopy = (event: React.SyntheticEvent | Event, reason?: string) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+    setOpenCopy(false);
+  };
+
+  const action = (
+    <React.Fragment>
+      <IconButton
+        size="small"
+        aria-label="close"
+        color="inherit"
+        onClick={handleCloseCopy}
+      >
+        <CloseIcon fontSize="small" />
+      </IconButton>
+    </React.Fragment>
+  );
+
   return (
     <Grid container spacing={3}>
       <Grid item xs={12} md={6}>
@@ -39,7 +74,7 @@ const AboutPage = () => {
                         Built by Liz. This site is part documentation, part portfolio, and part archive.
                       </Typography>
                       <Typography>
-                        Read updates, suggest features, or report bugs here.
+                       Regarding ongoing projects... Read updates, suggest features, or report bugs here.
                       </Typography>
                     </Stack>
                   </Stack>
@@ -77,7 +112,7 @@ const AboutPage = () => {
                         Full stack software engineer. Enjoys building "why not" applications in her free time.
                       </Typography>
                       <Typography>
-                        React, TypeScript, JavaScript, and AWS technologies.
+                        Professional experience with React, TypeScript, JavaScript, and AWS technologies.
                       </Typography>
                     </Stack>
                   </Stack>
@@ -120,14 +155,14 @@ const AboutPage = () => {
               <Card>
                 <CardContent>
                   <Stack direction='column' alignItems='center' justifyContent='center' spacing={1.5}>
-                    <a
+                    {/* <a
                       target="_blank"
                       rel="noreferrer"
-                      href='https://github.com/ya-miao'>
-                      <IconButton>
+                      href='https://github.com/ya-miao'> */}
+                      <IconButton href="https://github.com/ya-miao">
                         <GitHubIcon color='secondary' sx={{ width: 90, height: 90 }} />
                       </IconButton>
-                    </a>
+                    {/* </a> */}
                     <Stack direction='column' alignItems='center' justifyContent='center' spacing={1}>
                       <Typography variant='h5'>GitHub</Typography>
                       <Typography>ya-miao</Typography>
@@ -140,7 +175,10 @@ const AboutPage = () => {
               <Card>
                 <CardContent>
                   <Stack direction='column' alignItems='center' justifyContent='center' spacing={1.5}>
-                    <IconButton>
+                    <IconButton onClick={() => {
+                      copy('liz@liftdevlog.co')
+                      handleClickCopy();
+                    }}>
                       <EmailIcon color='secondary' sx={{ width: 90, height: 90 }} />
                     </IconButton>
                     <Stack direction='column' alignItems='center' justifyContent='center' spacing={1}>
@@ -166,7 +204,7 @@ const AboutPage = () => {
                 <CardContent>
                   <Stack direction='column' alignItems='center' justifyContent='center' spacing={2}>
                     <Typography variant='h4'>
-                      CURRENT PROJECTS
+                      ONGOING PROJECTS
                     </Typography>
                   </Stack>
                 </CardContent>
@@ -177,7 +215,7 @@ const AboutPage = () => {
                 <CardContent>
                   <Stack direction='column' alignItems='center' justifyContent='center' spacing={2}>
                     <Typography variant='h5'>
-                      CURRENT PROJECTS
+                      ONGOING PROJECTS
                     </Typography>
                   </Stack>
                 </CardContent>
@@ -185,7 +223,9 @@ const AboutPage = () => {
             </Grid>
             <Grid item xs={12}>
               <Stack direction='column' alignItems='center' justifyContent='center' spacing={2}>
-                <IconButton>
+                <IconButton onClick={() => {
+                  navigate('/projects');
+                }}>
                   <Stack alignItems='center' justifyContent='center' spacing={2}>
                     <img height={120} width={120} src={logolyLogo} />
                   </Stack>
@@ -315,6 +355,14 @@ const AboutPage = () => {
           </Grid>
         </Grid>
       </Grid> */}
+      <Snackbar
+        open={openCopy}
+        autoHideDuration={6000}
+        onClose={handleCloseCopy}
+        message="Copied email to clipbaord."
+        action={action}
+        anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+      />
     </Grid>
   )
 };

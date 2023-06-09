@@ -110,18 +110,10 @@ const ProjectsPage = () => {
               </Grid>
               <Grid item xs={12}>
                 <Stack direction='row' alignItems='center' justifyContent='center' spacing={1}>
-                  <Button variant='contained' fullWidth>GitHub</Button>
-                  <Button variant='contained' fullWidth>Live App</Button>
+                  <Button variant='contained' fullWidth href='https://github.com/ya-miao/lighthall-couple-yelp'>GitHub</Button>
+                  <Button variant='contained' fullWidth href='https://dev.d31kctbuv485tm.amplifyapp.com'>Live App</Button>
                 </Stack>
               </Grid>
-              {/* <Grid item xs={12} display={{ xs: 'block', lg: 'none' }}>
-                <Stack alignItems='center' justifyContent='center' spacing={2}>
-                  <Paper>
-                    <Avatar sx={{ height: 200, width: 200, m: 1 }} src={logolyLogo} />
-                  </Paper>
-                </Stack>
-              </Grid> */}
-              {/* <Grid item xs={12} md={9}> */}
               <Grid item xs={12}>
                 <Stack justifyContent='flex-start' spacing={2}>
                   <Typography>
@@ -154,18 +146,10 @@ const ProjectsPage = () => {
               </Grid>
               <Grid item xs={12}>
                 <Stack direction='row' alignItems='center' justifyContent='center' spacing={1}>
-                  <Button variant='contained' fullWidth>GitHub</Button>
-                  <Button variant='contained' fullWidth>Live App</Button>
+                  <Button variant='contained' fullWidth href='https://github.com/ya-miao/task-tracker'>GitHub</Button>
+                  <Button variant='contained' fullWidth href='https://dev.d1k8dokfdo58j9.amplifyapp.com/'>Live App</Button>
                 </Stack>
               </Grid>
-              {/* <Grid item xs={12} display={{ xs: 'block', lg: 'none' }}>
-                <Stack alignItems='center' justifyContent='center' spacing={2}>
-                  <Paper>
-                    <Avatar sx={{ height: 200, width: 200, m: 1 }} src={logolyLogo} />
-                  </Paper>
-                </Stack>
-              </Grid> */}
-              {/* <Grid item xs={12} md={9}> */}
               <Grid item xs={12}>
                 <Stack justifyContent='flex-start' spacing={2}>
                   <Typography>
@@ -198,18 +182,10 @@ const ProjectsPage = () => {
               </Grid>
               <Grid item xs={12}>
                 <Stack direction='row' alignItems='center' justifyContent='center' spacing={1}>
-                  <Button variant='contained' fullWidth>GitHub</Button>
-                  <Button variant='contained' fullWidth>Live App</Button>
+                  <Button variant='contained' fullWidth href='https://github.com/ya-miao/lighthall-hangman'>GitHub</Button>
+                  <Button variant='contained' fullWidth href='https://lighthall-hangman-coral.vercel.app/'>Live App</Button>
                 </Stack>
               </Grid>
-              {/* <Grid item xs={12} display={{ xs: 'block', lg: 'none' }}>
-                <Stack alignItems='center' justifyContent='center' spacing={2}>
-                  <Paper>
-                    <Avatar sx={{ height: 200, width: 200, m: 1 }} src={logolyLogo} />
-                  </Paper>
-                </Stack>
-              </Grid> */}
-              {/* <Grid item xs={12} md={9}> */}
               <Grid item xs={12}>
                 <Stack justifyContent='flex-start' spacing={2}>
                   <Typography>
