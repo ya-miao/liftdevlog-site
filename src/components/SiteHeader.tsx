@@ -171,45 +171,45 @@ const SiteHeader = () => {
         transformOrigin={{ horizontal: 'right', vertical: 'top' }}
         anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
       >
-        <Box sx={{ m: 1 }}>
-        <MenuItem onClick={() => {
-          navigate('/');
-          handleCloseMenu();
-        }}>
-          Home
-        </MenuItem>
-        {/* <MenuItem onClick={() => {
-          navigate('/about');
-          handleCloseMenu();
-        }}>
-          About The Log
-        </MenuItem> */}
-        <Divider />
-        <MenuItem onClick={() => {
-          navigate('/projects');
-          handleCloseMenu();
-        }}>
-          All Projects
-        </MenuItem>
-        {/* <MenuItem onClick={() => {
-          navigate('/updates');
-          handleCloseMenu();
-        }}>
-          Project Updates
-        </MenuItem>
-        <Divider />
-        <MenuItem onClick={() => {
-          navigate('/suggestions');
-          handleCloseMenu();
-        }}>
-          Suggest Features
-        </MenuItem>
-        <MenuItem onClick={() => {
-          navigate('reports');
-          handleCloseMenu();
-        }}>
-          Report Bugs
-        </MenuItem> */}
+        <Box sx={{ m: 1.5 }}>
+          <MenuItem onClick={() => {
+            navigate('/');
+            handleCloseMenu();
+          }}>
+            Log Home
+          </MenuItem>
+          <MenuItem onClick={() => {
+            navigate('/trilstudio');
+            handleCloseMenu();
+          }}>
+            TriL Studio
+          </MenuItem>
+          <Divider />
+          <MenuItem onClick={() => {
+            navigate('/projects');
+            handleCloseMenu();
+          }}>
+            All Projects
+          </MenuItem>
+          <Divider />
+          <MenuItem onClick={() => {
+            navigate('/updates');
+            handleCloseMenu();
+          }}>
+            Updates
+          </MenuItem>
+          {/* <MenuItem onClick={() => {
+            navigate('/suggestions');
+            handleCloseMenu();
+          }}>
+            Suggest Features
+          </MenuItem> */}
+          <MenuItem onClick={() => {
+            navigate('feedback');
+            handleCloseMenu();
+          }}>
+            Feedback
+          </MenuItem>
         </Box>
       </Menu>
       <ContactDialog

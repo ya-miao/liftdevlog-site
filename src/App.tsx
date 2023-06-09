@@ -16,8 +16,9 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import UpdatesPage from "./pages/UpdatesPage";
-import SuggestionsPage from "./pages/SuggestionsPage";
+import FeedbackPage from "./pages/FeedbackPage";
 import ReportsPage from "./pages/ReportsPage";
+import TrilStudioPage from "./pages/TrilStudioPage";
 
 import SiteHeader from "./components/SiteHeader";
 
@@ -115,11 +116,11 @@ const App = () => {
         >
           <Routes>
             <Route path="/" element={<AboutPage />} />
-            <Route path="about" element={<AboutPage />} />
+            <Route path="trilstudio" element={<TrilStudioPage />} />
             <Route path="projects" element={<ProjectsPage />} />
             <Route path="updates" element={<UpdatesPage />} />
-            <Route path="suggestions" element={<SuggestionsPage />} />
-            <Route path="reports" element={<ReportsPage />} />
+            <Route path="feedback" element={<FeedbackPage />} />
+            {/* <Route path="reports" element={<ReportsPage />} /> */}
           </Routes>
         </Box>
       </Box>
