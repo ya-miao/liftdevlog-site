@@ -48,6 +48,49 @@ const AboutPage = () => {
 
   return (
     <Grid container spacing={3}>
+      {/* <Grid item xs={12} md={6}> */}
+      <Grid item xs={12}>
+        <Grid item xs={12}>
+          <Grid container spacing={3}>
+            <Grid item xs={12} display={{ xs: 'none', sm: 'block' }}>
+              <Card>
+                <CardContent>
+                  <Stack direction='column' alignItems='center' justifyContent='center' spacing={2}>
+                    <Typography variant='h4'>
+                      ONGOING PROJECTS
+                    </Typography>
+                  </Stack>
+                </CardContent>
+              </Card>
+            </Grid>
+            <Grid item xs={12} display={{ xs: 'block', sm: 'none' }}>
+              <Card>
+                <CardContent>
+                  <Stack direction='column' alignItems='center' justifyContent='center' spacing={2}>
+                    <Typography variant='h5'>
+                      ONGOING PROJECTS
+                    </Typography>
+                  </Stack>
+                </CardContent>
+              </Card>
+            </Grid>
+            <Grid item xs={12}>
+              <Stack direction='column' alignItems='center' justifyContent='center' spacing={2}>
+                <IconButton onClick={() => {
+                  navigate('/projects');
+                }}>
+                  <Stack alignItems='center' justifyContent='center' spacing={2}>
+                    <img height={120} width={120} src={logolyLogo} />
+                  </Stack>
+                </IconButton>
+              </Stack>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+      <Grid item xs={12}>
+        <Divider />
+      </Grid>
       <Grid item xs={12} md={6}>
         <Grid item xs={12}>
           <Grid container spacing={3}>
@@ -74,7 +117,7 @@ const AboutPage = () => {
                         Built by Liz. This site is part documentation, part portfolio, and part archive.
                       </Typography>
                       <Typography>
-                       Regarding ongoing projects... Read updates, suggest features, or report bugs here.
+                        Read updates, suggest features, or report bugs here.
                       </Typography>
                     </Stack>
                   </Stack>
@@ -109,10 +152,10 @@ const AboutPage = () => {
                     </Typography>
                     <Stack justifyContent='flex-start' spacing={1.5}>
                       <Typography>
-                        Full stack software engineer. Enjoys building "why not" applications in her free time.
+                        Full stack developer. Enjoys building "why not" applications in her free time.
                       </Typography>
                       <Typography>
-                        Professional experience with React, TypeScript, JavaScript, and AWS technologies.
+                        React, TypeScript, JavaScript, and AWS technologies.
                       </Typography>
                     </Stack>
                   </Stack>
@@ -159,9 +202,9 @@ const AboutPage = () => {
                       target="_blank"
                       rel="noreferrer"
                       href='https://github.com/ya-miao'> */}
-                      <IconButton href="https://github.com/ya-miao">
-                        <GitHubIcon color='secondary' sx={{ width: 90, height: 90 }} />
-                      </IconButton>
+                    <IconButton href="https://github.com/ya-miao">
+                      <GitHubIcon color='secondary' sx={{ width: 90, height: 90 }} />
+                    </IconButton>
                     {/* </a> */}
                     <Stack direction='column' alignItems='center' justifyContent='center' spacing={1}>
                       <Typography variant='h5'>GitHub</Typography>
@@ -188,49 +231,6 @@ const AboutPage = () => {
                   </Stack>
                 </CardContent>
               </Card>
-            </Grid>
-          </Grid>
-        </Grid>
-      </Grid>
-      <Grid item xs={12}>
-        <Divider />
-      </Grid>
-      {/* <Grid item xs={12} md={6}> */}
-      <Grid item xs={12}>
-        <Grid item xs={12}>
-          <Grid container spacing={3}>
-            <Grid item xs={12} display={{ xs: 'none', sm: 'block' }}>
-              <Card>
-                <CardContent>
-                  <Stack direction='column' alignItems='center' justifyContent='center' spacing={2}>
-                    <Typography variant='h4'>
-                      ONGOING PROJECTS
-                    </Typography>
-                  </Stack>
-                </CardContent>
-              </Card>
-            </Grid>
-            <Grid item xs={12} display={{ xs: 'block', sm: 'none' }}>
-              <Card>
-                <CardContent>
-                  <Stack direction='column' alignItems='center' justifyContent='center' spacing={2}>
-                    <Typography variant='h5'>
-                      ONGOING PROJECTS
-                    </Typography>
-                  </Stack>
-                </CardContent>
-              </Card>
-            </Grid>
-            <Grid item xs={12}>
-              <Stack direction='column' alignItems='center' justifyContent='center' spacing={2}>
-                <IconButton onClick={() => {
-                  navigate('/projects');
-                }}>
-                  <Stack alignItems='center' justifyContent='center' spacing={2}>
-                    <img height={120} width={120} src={logolyLogo} />
-                  </Stack>
-                </IconButton>
-              </Stack>
             </Grid>
           </Grid>
         </Grid>

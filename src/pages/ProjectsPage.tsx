@@ -13,7 +13,7 @@ const ProjectsPage = () => {
                 ONGOING
               </Typography>
               <Typography variant='caption'>
-                Currently in active development
+                Under development
               </Typography>
             </Stack>
           </CardContent>
@@ -30,7 +30,7 @@ const ProjectsPage = () => {
                   </Paper> */}
                 <Stack alignItems='center' justifyContent='center' spacing={2}>
                 </Stack>
-                <Stack direction='column' alignItems='center' justifyContent='center' spacing={0.75}>
+                <Stack direction='column' alignItems='center' justifyContent='center' spacing={1}>
                   <Stack direction='row' alignItems='flex-end' justifyContent='center' spacing={1.5}>
                     <Typography variant='h4' fontWeight={600}>
                       LogOly
@@ -40,7 +40,7 @@ const ProjectsPage = () => {
                     </Typography>
                   </Stack>
                   <Typography variant='caption' fontWeight={600}>
-                    Repo and app are not yet public
+                    Early development. Private.
                   </Typography>
                 </Stack>
               </Grid>
@@ -48,7 +48,7 @@ const ProjectsPage = () => {
                 <Stack direction='row' alignItems='center' justifyContent='center' spacing={1}>
                   <Button variant='contained' fullWidth
                     color='secondary'
-                  >GitHub</Button>
+                  >Code Repo</Button>
                   <Button variant='contained' fullWidth
                     color='secondary'
                   >Live App</Button>
@@ -111,15 +111,21 @@ const ProjectsPage = () => {
               <Grid item xs={12}>
                 <Stack alignItems='center' justifyContent='center' spacing={2}>
                 </Stack>
-                <Stack direction='row' alignItems='flex-end' justifyContent='center' spacing={1.5}>
+                <Stack direction='column' alignItems='center' justifyContent='center' spacing={1}>
                   <Typography variant='h4' fontWeight={600}>
                     Date Night Yelp
                   </Typography>
+                  {/* <Typography variant='caption' fontWeight={600}>
+                    Request for access to repo.
+                  </Typography> */}
                 </Stack>
               </Grid>
               <Grid item xs={12}>
                 <Stack direction='row' alignItems='center' justifyContent='center' spacing={1}>
-                  <Button variant='contained' fullWidth href='https://github.com/ya-miao/lighthall-couple-yelp'>GitHub</Button>
+                  <Button variant='contained' fullWidth
+                    // color='secondary'
+                    href='https://github.com/ya-miao/lighthall-couple-yelp'
+                  >Code Repo</Button>
                   <Button variant='contained' fullWidth href='https://dev.d31kctbuv485tm.amplifyapp.com'>Live App</Button>
                 </Stack>
               </Grid>
@@ -147,15 +153,21 @@ const ProjectsPage = () => {
               <Grid item xs={12}>
                 <Stack alignItems='center' justifyContent='center' spacing={2}>
                 </Stack>
-                <Stack direction='row' alignItems='flex-end' justifyContent='center' spacing={1.5}>
+                <Stack direction='column' alignItems='center' justifyContent='center' spacing={1}>
                   <Typography variant='h4' fontWeight={600}>
                     A Task Tracker
                   </Typography>
+                  {/* <Typography variant='caption' fontWeight={600}>
+                    Request for access to repo.
+                  </Typography> */}
                 </Stack>
               </Grid>
               <Grid item xs={12}>
                 <Stack direction='row' alignItems='center' justifyContent='center' spacing={1}>
-                  <Button variant='contained' fullWidth href='https://github.com/ya-miao/task-tracker'>GitHub</Button>
+                  <Button variant='contained' fullWidth
+                    // color='secondary'
+                    href='https://github.com/ya-miao/task-tracker'
+                  >Code Repo</Button>
                   <Button variant='contained' fullWidth href='https://dev.d1k8dokfdo58j9.amplifyapp.com/'>Live App</Button>
                 </Stack>
               </Grid>
@@ -183,15 +195,21 @@ const ProjectsPage = () => {
               <Grid item xs={12}>
                 <Stack alignItems='center' justifyContent='center' spacing={2}>
                 </Stack>
-                <Stack direction='row' alignItems='flex-end' justifyContent='center' spacing={1.5}>
+                <Stack direction='column' alignItems='center' justifyContent='center' spacing={1}>
                   <Typography variant='h4' fontWeight={600}>
                     A Hangman Game
                   </Typography>
+                  {/* <Typography variant='caption' fontWeight={600}>
+                    Request for access to repo.
+                  </Typography> */}
                 </Stack>
               </Grid>
               <Grid item xs={12}>
                 <Stack direction='row' alignItems='center' justifyContent='center' spacing={1}>
-                  <Button variant='contained' fullWidth href='https://github.com/ya-miao/lighthall-hangman'>GitHub</Button>
+                  <Button variant='contained' fullWidth
+                    // color='secondary'
+                    href='https://github.com/ya-miao/lighthall-hangman'
+                  >GitHub</Button>
                   <Button variant='contained' fullWidth href='https://lighthall-hangman-coral.vercel.app/'>Live App</Button>
                 </Stack>
               </Grid>
