@@ -171,6 +171,7 @@ const SiteHeader = () => {
         transformOrigin={{ horizontal: 'right', vertical: 'top' }}
         anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
       >
+        <Box sx={{ m: 1 }}>
         <MenuItem onClick={() => {
           navigate('/');
           handleCloseMenu();
@@ -190,7 +191,7 @@ const SiteHeader = () => {
         }}>
           All Projects
         </MenuItem>
-        <MenuItem onClick={() => {
+        {/* <MenuItem onClick={() => {
           navigate('/updates');
           handleCloseMenu();
         }}>
@@ -208,7 +209,8 @@ const SiteHeader = () => {
           handleCloseMenu();
         }}>
           Report Bugs
-        </MenuItem>
+        </MenuItem> */}
+        </Box>
       </Menu>
       <ContactDialog
         open={openContact}

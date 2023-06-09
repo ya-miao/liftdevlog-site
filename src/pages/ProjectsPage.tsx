@@ -30,19 +30,28 @@ const ProjectsPage = () => {
                   </Paper> */}
                 <Stack alignItems='center' justifyContent='center' spacing={2}>
                 </Stack>
-                <Stack direction='row' alignItems='flex-end' justifyContent='center' spacing={1.5}>
-                  <Typography variant='h4' fontWeight={600}>
-                    LogOly
-                  </Typography>
-                  <Typography variant='overline' fontWeight={600}>
-                    Lift Tracker
+                <Stack direction='column' alignItems='center' justifyContent='center' spacing={0.75}>
+                  <Stack direction='row' alignItems='flex-end' justifyContent='center' spacing={1.5}>
+                    <Typography variant='h4' fontWeight={600}>
+                      LogOly
+                    </Typography>
+                    <Typography variant='overline' fontWeight={600}>
+                      Lift Tracker
+                    </Typography>
+                  </Stack>
+                  <Typography variant='caption' fontWeight={600}>
+                    Repo and app are not yet public
                   </Typography>
                 </Stack>
               </Grid>
               <Grid item xs={12}>
                 <Stack direction='row' alignItems='center' justifyContent='center' spacing={1}>
-                  <Button variant='contained' fullWidth>GitHub</Button>
-                  <Button variant='contained' fullWidth>Live App</Button>
+                  <Button variant='contained' fullWidth
+                    color='secondary'
+                  >GitHub</Button>
+                  <Button variant='contained' fullWidth
+                    color='secondary'
+                  >Live App</Button>
                 </Stack>
               </Grid>
               <Grid item xs={12} lg={3} display={{ xs: 'none', lg: 'block' }}>
