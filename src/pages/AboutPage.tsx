@@ -1,10 +1,8 @@
 import { Avatar, Accordion, AccordionDetails, AccordionSummary, Box, Button, Card, CardContent, Divider, Grid, IconButton, Stack, Typography } from "@mui/material";
 
-// import Accordion from '@mui/material/Accordion';
-// import AccordionSummary from '@mui/material/AccordionSummary';
-// import AccordionDetails from '@mui/material/AccordionDetails';
-
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import EmailIcon from '@mui/icons-material/Email';
 
 import profileLiz from '../images/profile-liz.jpg';
 import profileLiana from '../images/profile-liana.jpg';
@@ -38,7 +36,7 @@ const AboutPage = () => {
                     </Typography>
                     <Stack justifyContent='flex-start' spacing={1.5}>
                       <Typography>
-                        Documentation.
+                        Built by Liz. This site is part documentation, part portfolio, and part archive.
                       </Typography>
                       <Typography>
                         Read updates, suggest features, or report bugs here.
@@ -48,7 +46,7 @@ const AboutPage = () => {
                 </CardContent>
               </Card>
             </Grid>
-            <Grid item xs={12} lg={6}>
+            {/* <Grid item xs={12} lg={6}>
               <Card>
                 <CardContent sx={{ m: 1 }}>
                   <Stack justifyContent='flex-start' spacing={2}>
@@ -66,6 +64,25 @@ const AboutPage = () => {
                   </Stack>
                 </CardContent>
               </Card>
+            </Grid> */}
+            <Grid item xs={12} lg={6}>
+              <Card>
+                <CardContent sx={{ m: 1 }}>
+                  <Stack justifyContent='flex-start' spacing={2}>
+                    <Typography variant='h5'>
+                      Who Is Liz?
+                    </Typography>
+                    <Stack justifyContent='flex-start' spacing={1.5}>
+                      <Typography>
+                        Full stack software engineer. Enjoys building "why not" applications in her free time.
+                      </Typography>
+                      <Typography>
+                        React, TypeScript, JavaScript, and AWS technologies.
+                      </Typography>
+                    </Stack>
+                  </Stack>
+                </CardContent>
+              </Card>
             </Grid>
           </Grid>
         </Grid>
@@ -73,32 +90,66 @@ const AboutPage = () => {
       <Grid item xs={12} display={{ xs: 'block', md: 'none' }}>
         <Divider />
       </Grid>
+      {/* <Grid item xs={12}> */}
       <Grid item xs={12} md={6}>
         <Grid item xs={12}>
           <Grid container spacing={3}>
-            <Grid item xs={12}>
+            <Grid item xs={12} display={{ xs: 'none', sm: 'block' }}>
               <Card>
                 <CardContent>
                   <Stack direction='column' alignItems='center' justifyContent='center' spacing={2}>
                     <Typography variant='h4'>
-                      PROJECTS
+                      CONNECT WITH ME
                     </Typography>
                   </Stack>
                 </CardContent>
               </Card>
             </Grid>
-            <Grid item xs={12}>
-              {/* <Card>
-                <CardContent> */}
-              <Stack direction='column' alignItems='center' justifyContent='center' spacing={2}>
-                <IconButton>
-                  <Stack alignItems='center' justifyContent='center' spacing={2}>
-                    <img height={120} width={120} src={logolyLogo} />
+            <Grid item xs={12} display={{ xs: 'block', sm: 'none' }}>
+              <Card>
+                <CardContent>
+                  <Stack direction='column' alignItems='center' justifyContent='center' spacing={2}>
+                    <Typography variant='h5'>
+                      CONNECT WITH ME
+                    </Typography>
                   </Stack>
-                </IconButton>
-              </Stack>
-              {/* </CardContent>
-              </Card> */}
+                </CardContent>
+              </Card>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <Card>
+                <CardContent>
+                  <Stack direction='column' alignItems='center' justifyContent='center' spacing={1.5}>
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href='https://github.com/ya-miao'>
+                      <IconButton>
+                        <GitHubIcon color='secondary' sx={{ width: 90, height: 90 }} />
+                      </IconButton>
+                    </a>
+                    <Stack direction='column' alignItems='center' justifyContent='center' spacing={1}>
+                      <Typography variant='h5'>GitHub</Typography>
+                      <Typography>ya-miao</Typography>
+                    </Stack>
+                  </Stack>
+                </CardContent>
+              </Card>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <Card>
+                <CardContent>
+                  <Stack direction='column' alignItems='center' justifyContent='center' spacing={1.5}>
+                    <IconButton>
+                      <EmailIcon color='secondary' sx={{ width: 90, height: 90 }} />
+                    </IconButton>
+                    <Stack direction='column' alignItems='center' justifyContent='center' spacing={1}>
+                      <Typography variant='h5'>Email</Typography>
+                      <Typography>liz@liftdevlog.co</Typography>
+                    </Stack>
+                  </Stack>
+                </CardContent>
+              </Card>
             </Grid>
           </Grid>
         </Grid>
@@ -106,7 +157,45 @@ const AboutPage = () => {
       <Grid item xs={12}>
         <Divider />
       </Grid>
+      {/* <Grid item xs={12} md={6}> */}
       <Grid item xs={12}>
+        <Grid item xs={12}>
+          <Grid container spacing={3}>
+            <Grid item xs={12} display={{ xs: 'none', sm: 'block' }}>
+              <Card>
+                <CardContent>
+                  <Stack direction='column' alignItems='center' justifyContent='center' spacing={2}>
+                    <Typography variant='h4'>
+                      CURRENT PROJECTS
+                    </Typography>
+                  </Stack>
+                </CardContent>
+              </Card>
+            </Grid>
+            <Grid item xs={12} display={{ xs: 'block', sm: 'none' }}>
+              <Card>
+                <CardContent>
+                  <Stack direction='column' alignItems='center' justifyContent='center' spacing={2}>
+                    <Typography variant='h5'>
+                      CURRENT PROJECTS
+                    </Typography>
+                  </Stack>
+                </CardContent>
+              </Card>
+            </Grid>
+            <Grid item xs={12}>
+              <Stack direction='column' alignItems='center' justifyContent='center' spacing={2}>
+                <IconButton>
+                  <Stack alignItems='center' justifyContent='center' spacing={2}>
+                    <img height={120} width={120} src={logolyLogo} />
+                  </Stack>
+                </IconButton>
+              </Stack>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+      {/* <Grid item xs={12}>
         <Grid container spacing={3}>
           <Grid item xs={12}>
             <Card>
@@ -131,9 +220,9 @@ const AboutPage = () => {
                     <Typography variant='h5' fontWeight={600}>
                       LIZ
                     </Typography>
-                    {/* <Typography variant='h6' fontWeight={600}>
+                    <Typography variant='h6' fontWeight={600}>
                       Founder,
-                    </Typography> */}
+                    </Typography>
                     <Typography variant='h6' fontWeight={600}>
                       Software Engineer
                     </Typography>
@@ -166,9 +255,9 @@ const AboutPage = () => {
                     <Typography variant='h5' fontWeight={600}>
                       LIANA
                     </Typography>
-                    {/* <Typography variant='h6' fontWeight={600}>
+                    <Typography variant='h6' fontWeight={600}>
                       Co-Founder,
-                    </Typography> */}
+                    </Typography>
                     <Typography variant='h6' fontWeight={600}>
                       Quality Assurance
                     </Typography>
@@ -201,9 +290,9 @@ const AboutPage = () => {
                     <Typography variant='h5' fontWeight={600}>
                       LADY
                     </Typography>
-                    {/* <Typography variant='h6' fontWeight={600}>
+                    <Typography variant='h6' fontWeight={600}>
                       Executive,
-                    </Typography> */}
+                    </Typography>
                     <Typography variant='h6' fontWeight={600}>
                       Human Resources
                     </Typography>
@@ -214,9 +303,6 @@ const AboutPage = () => {
                 sx={{ m: 1 }}
               >
                 <Stack direction='column' spacing={1.5}>
-                  {/* <Typography>
-                    Miao.
-                  </Typography> */}
                   <Typography>
                     Lady is Liz's beloved cat. She is a lady of few human-intelligible words.
                   </Typography>
@@ -228,7 +314,7 @@ const AboutPage = () => {
             </Accordion>
           </Grid>
         </Grid>
-      </Grid>
+      </Grid> */}
     </Grid>
   )
 };
