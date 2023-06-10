@@ -19,11 +19,11 @@ const FeedbackPage = () => {
   return (
     <Grid container spacing={3}>
       <Grid item xs={12}>
-        <Grid container spacing={1.5}>
+        <Grid container spacing={3}>
           <Grid item xs={12}>
             <Card>
               <CardContent>
-                <Stack direction='column' alignItems='center' justifyContent='center' spacing={2}>
+                <Stack direction='column' alignItems='center' justifyContent='center' spacing={3}>
                   <Typography variant='h4'>
                     FEEDBACK
                   </Typography>
@@ -50,7 +50,7 @@ const FeedbackPage = () => {
       <Grid item xs={12} sm={6}>
         <Grid container spacing={2}>
           <Grid item xs={12}>
-            <Grid container spacing={2}>
+            <Grid container spacing={3}>
               <Grid item xs={12}>
                 <Card>
                   <CardContent>
@@ -82,7 +82,7 @@ const FeedbackPage = () => {
       </Grid>
       <Grid item xs={12} sm={6}>
         <Grid item xs={12}>
-          <Grid container spacing={2}>
+          <Grid container spacing={3}>
             <Grid item xs={12}>
               <Card>
                 <CardContent>

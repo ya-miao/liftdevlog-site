@@ -136,7 +136,7 @@ const AboutPage = () => {
                         Full stack. Enjoys working on "why not" projects.
                       </Typography>
                       <Typography>
-                        React. TypeScript. JavaScript. AWS Technologies.
+                        React. TypeScript. JavaScript. AWS technologies.
                       </Typography>
                     </Stack>
                   </Stack>
@@ -214,7 +214,7 @@ const AboutPage = () => {
         open={openCopy}
         autoHideDuration={6000}
         onClose={handleCloseCopy}
-        message="Copied email to clipbaord."
+        message="Copied to clipboard <- liz@liftdevlog.co"
         action={action}
         anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
       />

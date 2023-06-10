@@ -98,7 +98,7 @@ const ProjectsPage = () => {
                 SCRAPPED
               </Typography>
               <Typography variant='caption'>
-                Speedrun Developed / Hackathon Apps
+                Write-Protected Repos / Live Links
               </Typography>
             </Stack>
           </CardContent>
@@ -124,7 +124,7 @@ const ProjectsPage = () => {
                 <Stack direction='row' alignItems='center' justifyContent='center' spacing={1}>
                   <Button variant='contained' fullWidth
                     // color='secondary'
-                    href='https://github.com/ya-miao/lighthall-couple-yelp'
+                    href='https://gitfront.io/r/ya-miao/pxHerdLx4Ntu/date-night-yelp/'
                   >Code Repo</Button>
                   <Button variant='contained' fullWidth href='https://dev.d31kctbuv485tm.amplifyapp.com'>Live App</Button>
                 </Stack>
@@ -132,7 +132,7 @@ const ProjectsPage = () => {
               <Grid item xs={12}>
                 <Stack justifyContent='flex-start' spacing={2}>
                   <Typography>
-                    Speedrun hackathon app.
+                    Speedrun developed. Hackathon.
                   </Typography>
                   <Typography>
                     Takes input from two users to filter for preferred price level, distance, and cuisine.
@@ -166,7 +166,7 @@ const ProjectsPage = () => {
                 <Stack direction='row' alignItems='center' justifyContent='center' spacing={1}>
                   <Button variant='contained' fullWidth
                     // color='secondary'
-                    href='https://github.com/ya-miao/task-tracker'
+                    href='https://gitfront.io/r/ya-miao/TKRihNmSSkkF/a-task-tracker/'
                   >Code Repo</Button>
                   <Button variant='contained' fullWidth href='https://dev.d1k8dokfdo58j9.amplifyapp.com/'>Live App</Button>
                 </Stack>
@@ -174,7 +174,7 @@ const ProjectsPage = () => {
               <Grid item xs={12}>
                 <Stack justifyContent='flex-start' spacing={2}>
                   <Typography>
-                    Speedrun hackathon app.
+                    Speedrun developed. Hackathon.
                   </Typography>
                   <Typography>
                     Tracks tasks, descriptions, and statuses of completion. Includes sign up and login
@@ -208,15 +208,15 @@ const ProjectsPage = () => {
                 <Stack direction='row' alignItems='center' justifyContent='center' spacing={1}>
                   <Button variant='contained' fullWidth
                     // color='secondary'
-                    href='https://github.com/ya-miao/lighthall-hangman'
-                  >GitHub</Button>
+                    href='https://gitfront.io/r/ya-miao/Y6HLFmdrE3vW/a-hangman-game/'
+                  >Code Repo</Button>
                   <Button variant='contained' fullWidth href='https://lighthall-hangman-coral.vercel.app/'>Live App</Button>
                 </Stack>
               </Grid>
               <Grid item xs={12}>
                 <Stack justifyContent='flex-start' spacing={2}>
                   <Typography>
-                    Speedrun hackathon app.
+                    Speedrun developed. Hackathon.
                   </Typography>
                   <Typography>
                     Traditional hangman gameplay with a leaderboard that displays top players

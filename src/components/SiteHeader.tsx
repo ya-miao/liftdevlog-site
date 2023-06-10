@@ -20,15 +20,6 @@ import ContactDialog from "./ContactDialog";
 
 import { useNavigate } from "react-router-dom";
 
-interface SiteHeaderProps {
-  // user: any;
-  // isDarkMode: boolean;
-  // setIsDarkMode: any;
-  // handleChangeSwitch: any;
-}
-
-// const SiteHeader = ({ user, isDarkMode, setIsDarkMode, handleChangeSwitch }: SiteHeaderProps) => {
-// const SiteHeader = ({ user, handleChangeSwitch }: SiteHeaderProps) => {
 const SiteHeader = () => {
 
   //   useEffect(() => {
@@ -68,70 +59,29 @@ const SiteHeader = () => {
               }}>
                 <img width='50px' height='50px' src={liftdevlogLogo} />
               </IconButton>
-              {/* <Typography variant='h3'>Lift Dev Log</Typography> */}
               <Typography variant='h3'>Lift Dev Log</Typography>
             </Stack>
           </Grid>
           <Grid item display={{ xs: 'block', sm: 'none' }}>
-            <Stack direction='row' spacing={1.5} alignItems='center' justifyContent='center'>
+            <Stack direction='row' spacing={1.25} alignItems='center' justifyContent='center'>
               <IconButton size='small' onClick={() => {
                 navigate('/');
               }}>
                 <img width='35px' height='35px' src={liftdevlogLogo} />
               </IconButton>
-              {/* <Typography variant='h5'>Lift Dev Log</Typography> */}
               <Typography variant='h4'>Lift Dev Log</Typography>
             </Stack>
           </Grid>
-          {/* <Grid item display={{ xs: 'none', sm: 'block' }}>
-            <Button size='small' variant='contained' sx={{ textTransform: 'none' }} color="secondary" onClick={handleClickOpenContact}>
-              <Stack direction='row' spacing={0.75} alignItems='center' justifyContent='center'>
-                <EmailIcon />
-                <Typography variant='overline' fontWeight={1000}>Contact</Typography>
-              </Stack>
-            </Button>
-          </Grid> */}
-          {/* <Grid item display={{ xs: 'block', sm: 'none' }}> */}
+          <Grid item display={{ xs: 'none', sm: 'block' }}>
+            <Typography variant='overline'>I lift. I dev. I log.</Typography>
+          </Grid>
           <Grid item>
             <Stack direction='row' spacing={2}>
-              {/* <IconButton color="secondary" onClick={handleClickOpenContact}>
-              <EmailIcon />
-            </IconButton> */}
               <IconButton color="secondary" onClick={handleClickMenu}>
                 <MenuIcon />
               </IconButton>
             </Stack>
           </Grid>
-          {/* <Grid item display={{ xs: 'none', sm: 'block' }}>
-            <Stack direction='row' spacing={2} alignItems='center' justifyContent='center'>
-              <Switch
-                // checked={isDarkMode}
-                // onChange={handleChangeSwitch}
-                color="secondary"
-                size='small'
-              />
-              <Fab
-                //   onClick={signOut}
-                color='secondary' size="small" >
-                <LogoutIcon />
-              </Fab>
-            </Stack>
-          </Grid>
-          <Grid item display={{ xs: 'block', sm: 'none' }}>
-            <Stack direction='row' spacing={2} alignItems='center' justifyContent='center'>
-              <Switch
-                // checked={isDarkMode}
-                // onChange={handleChangeSwitch}
-                color="secondary"
-                size='small'
-              />
-              <Fab
-                // onClick={signOut}
-                color='secondary' size="small" >
-                <LogoutIcon fontSize='small' />
-              </Fab>
-            </Stack>
-          </Grid> */}
         </Grid>
       </Box>
       <Menu
