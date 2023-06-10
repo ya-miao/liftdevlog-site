@@ -85,6 +85,13 @@ const siteTheme = createTheme({
         },
       },
     },
+    MuiDialogContentText: {
+      styleOverrides: {
+        root: {
+          color: '#ffffff',
+        },
+      },
+    },
     MuiPaper: {
       styleOverrides: {
         root: {

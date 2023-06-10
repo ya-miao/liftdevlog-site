@@ -46,16 +46,6 @@ const SiteHeader = () => {
 
   const navigate = useNavigate();
 
-  const [openContact, setOpenContact] = useState(false);
-
-  const handleClickOpenContact = () => {
-    setOpenContact(true);
-  };
-
-  const handleCloseContact = () => {
-    setOpenContact(false);
-  };
-
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const openMenu = Boolean(anchorEl);
 
@@ -72,15 +62,23 @@ const SiteHeader = () => {
       <Box sx={{ mx: 2, my: 2.5 }}>
         <Grid container direction='row' alignItems='center' justifyContent='space-between'>
           <Grid item display={{ xs: 'none', sm: 'block' }}>
-            <Stack direction='row' spacing={1.75} alignItems='center' justifyContent='center'>
-              <img width='50px' height='50px' src={liftdevlogLogo} />
+            <Stack direction='row' spacing={2} alignItems='center' justifyContent='center'>
+              <IconButton size='small' onClick={() => {
+                navigate('/');
+              }}>
+                <img width='50px' height='50px' src={liftdevlogLogo} />
+              </IconButton>
               {/* <Typography variant='h3'>Lift Dev Log</Typography> */}
               <Typography variant='h3'>Lift Dev Log</Typography>
             </Stack>
           </Grid>
           <Grid item display={{ xs: 'block', sm: 'none' }}>
             <Stack direction='row' spacing={1.5} alignItems='center' justifyContent='center'>
-              <img width='35px' height='35px' src={liftdevlogLogo} />
+              <IconButton size='small' onClick={() => {
+                navigate('/');
+              }}>
+                <img width='35px' height='35px' src={liftdevlogLogo} />
+              </IconButton>
               {/* <Typography variant='h5'>Lift Dev Log</Typography> */}
               <Typography variant='h4'>Lift Dev Log</Typography>
             </Stack>
@@ -212,11 +210,7 @@ const SiteHeader = () => {
           </MenuItem>
         </Box>
       </Menu>
-      <ContactDialog
-        open={openContact}
-        onClose={handleCloseContact}
-      />
-    </AppBar >
+    </AppBar>
   );
 };
 

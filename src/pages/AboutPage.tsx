@@ -114,48 +114,29 @@ const AboutPage = () => {
                     </Typography>
                     <Stack justifyContent='flex-start' spacing={1.5}>
                       <Typography>
-                        Built by Liz. This site is part documentation, part portfolio, and part archive.
+                        Part documentation. Part portfolio. Part archive.
                       </Typography>
                       <Typography>
-                        Read updates, suggest features, or report bugs here.
+                        Read updates. Suggest features. Or report bugs.
                       </Typography>
                     </Stack>
                   </Stack>
                 </CardContent>
               </Card>
             </Grid>
-            {/* <Grid item xs={12} lg={6}>
-              <Card>
-                <CardContent sx={{ m: 1 }}>
-                  <Stack justifyContent='flex-start' spacing={2}>
-                    <Typography variant='h5'>
-                      Who Is TriL Studio?
-                    </Typography>
-                    <Stack justifyContent='flex-start' spacing={1.5}>
-                      <Typography>
-                        A team of three.
-                      </Typography>
-                      <Typography>
-                        One programmer. One tester. One cat.
-                      </Typography>
-                    </Stack>
-                  </Stack>
-                </CardContent>
-              </Card>
-            </Grid> */}
             <Grid item xs={12} lg={6}>
               <Card>
                 <CardContent sx={{ m: 1 }}>
                   <Stack justifyContent='flex-start' spacing={2}>
                     <Typography variant='h5'>
-                      Who Is Liz?
+                      I Am Liz.
                     </Typography>
                     <Stack justifyContent='flex-start' spacing={1.5}>
                       <Typography>
-                        Full stack developer. Enjoys building "why not" applications in her free time.
+                        Full stack. Enjoys working on "why not" projects.
                       </Typography>
                       <Typography>
-                        React, TypeScript, JavaScript, and AWS technologies.
+                        React. TypeScript. JavaScript. AWS Technologies.
                       </Typography>
                     </Stack>
                   </Stack>
@@ -198,11 +179,11 @@ const AboutPage = () => {
                 <CardContent sx={{ m: 1 }}>
                   <Stack direction='column' alignItems='center' justifyContent='center' spacing={1.5}>
                     <IconButton href="https://github.com/ya-miao">
-                      <GitHubIcon color='secondary' sx={{ width: 90, height: 90 }} />
+                      <GitHubIcon color='secondary' sx={{ width: 95, height: 95 }} />
                     </IconButton>
                     <Stack direction='column' alignItems='center' justifyContent='center' spacing={0.75}>
                       <Typography variant='h5'>GitHub</Typography>
-                      <Typography>ya-miao</Typography>
+                      {/* <Typography>ya-miao</Typography> */}
                     </Stack>
                   </Stack>
                 </CardContent>
@@ -216,11 +197,11 @@ const AboutPage = () => {
                       copy('liz@liftdevlog.co')
                       handleClickCopy();
                     }}>
-                      <EmailIcon color='secondary' sx={{ width: 90, height: 90 }} />
+                      <EmailIcon color='secondary' sx={{ width: 95, height: 95 }} />
                     </IconButton>
                     <Stack direction='column' alignItems='center' justifyContent='center' spacing={0.75}>
                       <Typography variant='h5'>Email</Typography>
-                      <Typography>liz@liftdevlog.co</Typography>
+                      {/* <Typography>liz@liftdevlog.co</Typography> */}
                     </Stack>
                   </Stack>
                 </CardContent>

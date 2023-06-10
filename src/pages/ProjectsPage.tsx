@@ -40,7 +40,7 @@ const ProjectsPage = () => {
                     </Typography>
                   </Stack>
                   <Typography variant='caption' fontWeight={600}>
-                    Early development. Private.
+                    In Early Development. Private.
                   </Typography>
                 </Stack>
               </Grid>
@@ -98,7 +98,7 @@ const ProjectsPage = () => {
                 SCRAPPED
               </Typography>
               <Typography variant='caption'>
-                Liz's speedrun / hackathon / "why not" apps
+                Speedrun Developed / Hackathon Apps
               </Typography>
             </Stack>
           </CardContent>
