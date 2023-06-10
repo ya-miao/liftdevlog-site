@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { Avatar, Accordion, AccordionDetails, AccordionSummary, Box, Button, Card, CardContent, Divider, Grid, IconButton, Snackbar, Stack, Typography } from "@mui/material";
+import { Avatar, Accordion, AccordionDetails, AccordionSummary, Box, Button, Card, CardContent, Divider, Grid, IconButton, Paper, Snackbar, Stack, Typography } from "@mui/material";
 
 import { useCopyToClipboard } from 'usehooks-ts'
 import { useNavigate } from "react-router-dom";
@@ -52,7 +52,7 @@ const AboutPage = () => {
       <Grid item xs={12}>
         <Grid item xs={12}>
           <Grid container spacing={3}>
-            <Grid item xs={12} display={{ xs: 'none', sm: 'block' }}>
+            {/* <Grid item xs={12} display={{ xs: 'none', sm: 'block' }}>
               <Card>
                 <CardContent>
                   <Stack direction='column' alignItems='center' justifyContent='center' spacing={2}>
@@ -62,8 +62,8 @@ const AboutPage = () => {
                   </Stack>
                 </CardContent>
               </Card>
-            </Grid>
-            <Grid item xs={12} display={{ xs: 'block', sm: 'none' }}>
+            </Grid> */}
+            {/* <Grid item xs={12} display={{ xs: 'block', sm: 'none' }}>
               <Card>
                 <CardContent>
                   <Stack direction='column' alignItems='center' justifyContent='center' spacing={2}>
@@ -73,8 +73,8 @@ const AboutPage = () => {
                   </Stack>
                 </CardContent>
               </Card>
-            </Grid>
-            <Grid item xs={12}>
+            </Grid> */}
+            {/* <Grid item xs={12}>
               <Stack direction='column' alignItems='center' justifyContent='center' spacing={2}>
                 <IconButton onClick={() => {
                   navigate('/projects');
@@ -84,6 +84,86 @@ const AboutPage = () => {
                   </Stack>
                 </IconButton>
               </Stack>
+            </Grid> */}
+            <Grid item xs={12}>
+              <Card>
+                <CardContent>
+                  <Stack alignItems='center' justifyContent='center' spacing={1}>
+                    <Typography variant='h3'>
+                      PROJECTS
+                    </Typography>
+                    <Typography variant='caption'>
+                      {/* Under development */}
+                      Ongoing
+                    </Typography>
+                  </Stack>
+                </CardContent>
+              </Card>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <Card>
+                <CardContent sx={{ m: 1 }}>
+                  <Grid container alignItems='center' justifyContent='center' spacing={3}>
+                    <Grid item xs={12}>
+                      {/* <Stack direction='row' alignItems='center' justifyContent='center' spacing={0.5}> */}
+                      {/* <Paper>
+                    <Avatar sx={{ height: 30, width: 30, m: 0.5 }} src={logolyLogo} />
+                  </Paper> */}
+                      <Stack alignItems='center' justifyContent='center' spacing={2}>
+                      </Stack>
+                      <Stack direction='column' alignItems='center' justifyContent='center' spacing={1}>
+                        <Stack direction='row' alignItems='flex-end' justifyContent='center' spacing={1.5}>
+                          <Typography variant='h4' fontWeight={600}>
+                            LogOly
+                          </Typography>
+                          <Typography variant='overline' fontWeight={600}>
+                            Lift Tracker
+                          </Typography>
+                        </Stack>
+                        <Typography variant='caption' fontWeight={600}>
+                          Private Repo. In Early Development.
+                        </Typography>
+                      </Stack>
+                    </Grid>
+                    <Grid item xs={12}>
+                      <Stack direction='row' alignItems='center' justifyContent='center' spacing={1}>
+                        <Button variant='contained' fullWidth
+                          color='secondary'
+                        >Code Repo</Button>
+                        <Button variant='contained' fullWidth
+                          color='secondary'
+                        >Live App</Button>
+                      </Stack>
+                    </Grid>
+                    <Grid item xs={12} lg={3} display={{ xs: 'none', lg: 'block' }}>
+                      <Stack alignItems='center' justifyContent='center' spacing={2}>
+                        <Paper>
+                          <Avatar sx={{ height: 110, width: 110, m: 1 }} src={logolyLogo} />
+                        </Paper>
+                      </Stack>
+                    </Grid>
+                    <Grid item xs={12} lg={3} display={{ xs: 'block', lg: 'none' }}>
+                      <Stack alignItems='center' justifyContent='center' spacing={2}>
+                        <Paper>
+                          <Avatar sx={{ height: 200, width: 200, m: 1 }} src={logolyLogo} />
+                        </Paper>
+                      </Stack>
+                    </Grid>
+                    <Grid item xs={12} md={9}>
+                      <Stack justifyContent='flex-start' spacing={2}>
+                        <Typography>
+                          A tracking tool for lifters.
+                        </Typography>
+                        <Typography>
+                          Store lifting programs. Take notes during workout
+                          sessions. Review previous sessions. Save max lifts. Track
+                          strength progress over time. Among other features.
+                        </Typography>
+                      </Stack>
+                    </Grid>
+                  </Grid>
+                </CardContent>
+              </Card>
             </Grid>
           </Grid>
         </Grid>

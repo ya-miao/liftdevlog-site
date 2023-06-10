@@ -20,7 +20,7 @@ const FeedbackPage = () => {
     <Grid container spacing={3}>
       <Grid item xs={12}>
         <Grid container spacing={3}>
-          <Grid item xs={12}>
+          {/* <Grid item xs={12}>
             <Card>
               <CardContent>
                 <Stack direction='column' alignItems='center' justifyContent='center' spacing={3}>
@@ -30,14 +30,14 @@ const FeedbackPage = () => {
                 </Stack>
               </CardContent>
             </Card>
-          </Grid>
+          </Grid> */}
           <Grid item xs={12}>
             <Stack alignItems='center' justifyContent='center' spacing={2}>
               <Button variant='contained' fullWidth sx={{ textTransform: 'none' }}
                 onClick={handleClickOpenContact}
               >
-                <Typography variant='h5' sx={{ m: 0.75 }}>
-                  Provide Feedback
+                <Typography variant='h5' sx={{ m: 1 }}>
+                  PROVIDE FEEDBACK
                 </Typography>
               </Button>
             </Stack>

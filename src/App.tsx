@@ -20,6 +20,8 @@ import FeedbackPage from "./pages/FeedbackPage";
 import ReportsPage from "./pages/ReportsPage";
 import TrilStudioPage from "./pages/TrilStudioPage";
 
+import PrivatePortfolioPage from './pages/PrivatePortfolioPage';
+
 import SiteHeader from "./components/SiteHeader";
 
 const siteTheme = createTheme({
@@ -124,9 +126,10 @@ const App = () => {
           <Routes>
             <Route path="/" element={<AboutPage />} />
             <Route path="trilstudio" element={<TrilStudioPage />} />
-            <Route path="projects" element={<ProjectsPage />} />
+            {/* <Route path="projects" element={<ProjectsPage />} /> */}
             <Route path="updates" element={<UpdatesPage />} />
             <Route path="feedback" element={<FeedbackPage />} />
+            <Route path="privateportfolio" element={<PrivatePortfolioPage />} />
             {/* <Route path="reports" element={<ReportsPage />} /> */}
           </Routes>
         </Box>

@@ -126,20 +126,20 @@ const SiteHeader = () => {
           }}>
             Log Home
           </MenuItem>
-          <MenuItem onClick={() => {
+          {/* <MenuItem onClick={() => {
             navigate('/trilstudio');
             handleCloseMenu();
           }}>
             TriL Studio
-          </MenuItem>
+          </MenuItem> */}
           <Divider />
-          <MenuItem onClick={() => {
+          {/* <MenuItem onClick={() => {
             navigate('/projects');
             handleCloseMenu();
           }}>
             All Projects
           </MenuItem>
-          <Divider />
+          <Divider /> */}
           <MenuItem onClick={() => {
             navigate('/updates');
             handleCloseMenu();

@@ -99,6 +99,7 @@ const FeedbackDialog = ({ open, onClose }: FeedbackDialogProps) => {
                           >
                             <MenuItem value='Report'>Report A Bug</MenuItem>
                             <MenuItem value='Suggestion'>Suggest A Feature</MenuItem>
+                            <MenuItem value='Other'>Other</MenuItem>
                           </Select>
                         </FormControl>
                       </Box>
