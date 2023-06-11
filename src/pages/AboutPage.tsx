@@ -157,7 +157,7 @@ const AboutPage = () => {
                         <Typography>
                           Store lifting programs. Take notes during workout
                           sessions. Review previous sessions. Save max lifts. Track
-                          strength progress over time. Among other features.
+                          strength progress over time.
                         </Typography>
                       </Stack>
                     </Grid>
