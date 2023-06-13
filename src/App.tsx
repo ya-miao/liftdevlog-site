@@ -94,6 +94,13 @@ const siteTheme = createTheme({
         },
       },
     },
+    MuiInputBase: {
+      styleOverrides: {
+        input: {
+          color: '#ffffff',
+        }
+      }
+    },
     MuiPaper: {
       styleOverrides: {
         root: {

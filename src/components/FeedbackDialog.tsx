@@ -84,8 +84,8 @@ const FeedbackDialog = ({ open, onClose }: FeedbackDialogProps) => {
           {/* <DialogContentText sx={{ mb: 2 }}>Enter your contact info and inquiry.</DialogContentText> */}
           <Stack spacing={2}>
             {/* <Typography>Enter your name, email, and feedback.</Typography> */}
-            <Card sx={{ backgroundColor: '#eaeaea' }}>
-              <CardContent sx={{ m: 0.5 }}>
+            {/* <Card sx={{ backgroundColor: '#eaeaea' }}>
+              <CardContent sx={{ m: 0.5 }}> */}
                 <Stack spacing={3}>
                   <Grid container display='flex' spacing={2}>
                     <Grid item xs={12}>
@@ -113,8 +113,8 @@ const FeedbackDialog = ({ open, onClose }: FeedbackDialogProps) => {
                   </Grid>
                   <TextField size='small' variant='filled' multiline rows={5} label='Feedback' onChange={(handleInquiryChange)} />
                 </Stack>
-              </CardContent>
-            </Card>
+              {/* </CardContent>
+            </Card> */}
           </Stack>
         </DialogContent>
         <DialogActions>

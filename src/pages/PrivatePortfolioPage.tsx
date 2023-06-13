@@ -49,7 +49,7 @@ const PrivatePortfolioPage = () => {
               <Grid item xs={12}>
                 <Stack justifyContent='flex-start' spacing={2}>
                   <Typography>
-                    Speedrun developed. Hackathon.
+                    Hackathon.
                   </Typography>
                   <Typography>
                     Takes input from two users to filter for preferred price level, distance, and cuisine.
@@ -91,7 +91,7 @@ const PrivatePortfolioPage = () => {
               <Grid item xs={12}>
                 <Stack justifyContent='flex-start' spacing={2}>
                   <Typography>
-                    Speedrun developed. Hackathon.
+                    Hackathon. Not mobile responsive.
                   </Typography>
                   <Typography>
                     Tracks tasks, descriptions, and statuses of completion. Includes sign up and login
@@ -133,7 +133,7 @@ const PrivatePortfolioPage = () => {
               <Grid item xs={12}>
                 <Stack justifyContent='flex-start' spacing={2}>
                   <Typography>
-                    Speedrun developed. Hackathon.
+                    Hackathon. Not mobile responsive.
                   </Typography>
                   <Typography>
                     Traditional hangman gameplay with a leaderboard that displays top players
